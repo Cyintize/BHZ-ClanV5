@@ -314,13 +314,13 @@
 }
 
 .tag--vegetarian {
-  background-color: #51cf66;
+  background-color: #99e9f2;
 }
 .tag--vegan {
-  background-color: #94d82d;
+  background-color: #3bc9db;
 }
 .tag--paleo {
-  background-color: #ffd43b;
+  background: -webkit-linear-gradient(70deg, #db469f 0%, #2188ff 100%);
 }
 
 .meal-title {
@@ -683,7 +683,6 @@
 
 .step {
   margin-left: 150px;
-  stroke: #3bc9db;
 }
 
 .he {
@@ -751,4 +750,53 @@
 
 .copyright {
   font-family: "Raleway";
+}
+
+.cor {
+  font-weight: 900;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 15px solid rgb(0, 225, 255); The typewriter cursor */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.section-cta {
+  margin-top: 50px;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 190px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+.animation {
+  margin-left: 30px;
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+.gradient {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 15px solid rgb(0, 225, 255); The typewriter cursor */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
 }
